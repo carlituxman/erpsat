@@ -1,4 +1,9 @@
-<?php namespace ERPSAT\Http\Controllers;
+<?php
+namespace ERPsat\Http\Controllers;
+
+use ERPsat\Helpers\ConfigHelper;
+
+use View;
 
 class WelcomeController extends Controller {
 
@@ -21,6 +26,9 @@ class WelcomeController extends Controller {
 	public function __construct()
 	{
 		$this->middleware('guest');
+
+		$menuWeb = ConfigHelper::menuWeb();
+        View::share('menuWeb',$menuWeb);
 	}
 
 	/**

@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Models;
+<?php namespace ERPsat\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

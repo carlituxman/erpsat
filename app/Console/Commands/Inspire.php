@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Console\Commands;
+<?php namespace ERPsat\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

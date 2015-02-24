@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Providers;
+<?php namespace ERPsat\Providers;
 
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +16,7 @@ class BusServiceProvider extends ServiceProvider {
 		$dispatcher->mapUsing(function($command)
 		{
 			return Dispatcher::simpleMapping(
-				$command, 'ERPSAT\Commands', 'ERPSAT\Handlers\Commands'
+				$command, 'ERPsat\Commands', 'ERPsat\Handlers\Commands'
 			);
 		});
 	}

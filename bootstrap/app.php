@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
-	'ERPSAT\Http\Kernel'
+	'ERPsat\Http\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
-	'ERPSAT\Console\Kernel'
+	'ERPsat\Console\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Debug\ExceptionHandler',
-	'ERPSAT\Exceptions\Handler'
+	'ERPsat\Exceptions\Handler'
 );
 
 /*

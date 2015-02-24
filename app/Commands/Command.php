@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Commands;
+<?php namespace ERPsat\Commands;
 
 abstract class Command {
 

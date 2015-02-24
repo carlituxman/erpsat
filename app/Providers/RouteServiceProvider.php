@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Providers;
+<?php namespace ERPsat\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider {
 	 *
 	 * @var string
 	 */
-	protected $namespace = 'ERPSAT\Http\Controllers';
+	protected $namespace = 'ERPsat\Http\Controllers';
 
 	/**
 	 * Define your route model bindings, pattern filters, etc.

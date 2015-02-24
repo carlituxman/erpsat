@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Http\Requests;
+<?php namespace ERPsat\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

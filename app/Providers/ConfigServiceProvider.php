@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Providers;
+<?php namespace ERPsat\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

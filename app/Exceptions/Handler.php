@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Exceptions;
+<?php namespace ERPsat\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

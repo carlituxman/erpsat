@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Models;
+<?php namespace ERPsat\Models;
 
 
 abstract class BaseRepo {
@@ -10,12 +10,6 @@ abstract class BaseRepo {
     public $filters = [];
 
     abstract public function getModel();
-
-
-    /*public function getFechaCreacionEsAttribute()
-    {
-        return date('d-m-Y H:i:s', strtotime($this->fecha_creacion));
-    }*/
 
 
     public function findOrFail($id)

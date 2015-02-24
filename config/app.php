@@ -65,7 +65,7 @@ return [
 	|
 	*/
 
-	'fallback_locale' => 'en',
+	'fallback_locale' => 'es',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -135,15 +135,16 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
+		'Illuminate\Html\HtmlServiceProvider',
 
 		/*
 		 * Application Service Providers...
 		 */
-		'ERPSAT\Providers\AppServiceProvider',
-		'ERPSAT\Providers\BusServiceProvider',
-		'ERPSAT\Providers\ConfigServiceProvider',
-		'ERPSAT\Providers\EventServiceProvider',
-		'ERPSAT\Providers\RouteServiceProvider',
+		'ERPsat\Providers\AppServiceProvider',
+		'ERPsat\Providers\BusServiceProvider',
+		'ERPsat\Providers\ConfigServiceProvider',
+		'ERPsat\Providers\EventServiceProvider',
+		'ERPsat\Providers\RouteServiceProvider',
 
 	],
 
@@ -192,6 +193,8 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+		'Form'		=> 'Illuminate\Html\FormFacade',
+		'HTML'		=> 'Illuminate\Html\HtmlFacade',
 
 	],
 

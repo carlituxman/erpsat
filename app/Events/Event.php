@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Events;
+<?php namespace ERPsat\Events;
 
 abstract class Event {
 

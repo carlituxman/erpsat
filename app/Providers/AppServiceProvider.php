@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Providers;
+<?php namespace ERPsat\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
-			'ERPSAT\Services\Registrar'
+			'ERPsat\Services\Registrar'
 		);
 	}
 

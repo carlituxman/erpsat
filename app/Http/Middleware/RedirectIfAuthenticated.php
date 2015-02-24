@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Http\Middleware;
+<?php namespace ERPsat\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

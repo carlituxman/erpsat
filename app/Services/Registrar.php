@@ -1,6 +1,7 @@
-<?php namespace ERPSAT\Services;
+<?php
+namespace ERPsat\Services;
 
-use ERPSAT\User;
+use ERPsat\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

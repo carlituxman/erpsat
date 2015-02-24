@@ -1,4 +1,5 @@
-<?php namespace ERPSAT\Http\Controllers;
+<?php
+namespace ERPsat\Http\Controllers;
 
 class HomeController extends Controller {
 

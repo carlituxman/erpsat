@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Http;
+<?php namespace ERPsat\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -15,7 +15,7 @@ class Kernel extends HttpKernel {
 		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
 		'Illuminate\Session\Middleware\StartSession',
 		'Illuminate\View\Middleware\ShareErrorsFromSession',
-		'ERPSAT\Http\Middleware\VerifyCsrfToken',
+		'ERPsat\Http\Middleware\VerifyCsrfToken',
 	];
 
 	/**
@@ -24,9 +24,9 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'ERPSAT\Http\Middleware\Authenticate',
+		'auth' => 'ERPsat\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-		'guest' => 'ERPSAT\Http\Middleware\RedirectIfAuthenticated',
+		'guest' => 'ERPsat\Http\Middleware\RedirectIfAuthenticated',
 	];
 
 }

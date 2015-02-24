@@ -1,4 +1,4 @@
-<?php namespace ERPSAT\Console;
+<?php namespace ERPsat\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -11,7 +11,7 @@ class Kernel extends ConsoleKernel {
 	 * @var array
 	 */
 	protected $commands = [
-		'ERPSAT\Console\Commands\Inspire',
+		'ERPsat\Console\Commands\Inspire',
 	];
 
 	/**

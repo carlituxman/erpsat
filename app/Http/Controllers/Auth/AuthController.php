@@ -1,6 +1,7 @@
-<?php namespace ERPSAT\Http\Controllers\Auth;
+<?php
+namespace ERPsat\Http\Controllers\Auth;
 
-use ERPSAT\Http\Controllers\Controller;
+use ERPsat\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;

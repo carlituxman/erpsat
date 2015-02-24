@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: ERPSAT
-        psr4_prefix: ERPSAT
+        namespace: ERPsat
+        psr4_prefix: ERPsat
         src_path: app
