@@ -1,6 +1,8 @@
 <?php
 
-class PaisesYComunidadesSeeder extends Seeder {
+use Illuminate\Database\Seeder;
+
+class PaisesYEstadosSeeder extends Seeder {
 
     public function run()
     {

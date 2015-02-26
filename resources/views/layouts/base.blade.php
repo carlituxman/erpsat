@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield("title")</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@yield('title', 'ERPsat')</title>
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -29,8 +30,9 @@
     <![endif]-->
 </head>
 <body>
+    <div id="wrapper">
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
@@ -104,16 +106,22 @@
         </div>
     </nav>
 
+    @yield('menu-lateral')
+
     @yield('content')
+
+    </div>
 
     <!-- Scripts -->
     <script src="/assets/js/jquery-1.10.2.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
 
+    <script src="/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="/assets/js/sb-admin.js"></script>
 
     <script src="/assets/js/erpsat.js"></script>
 
     @yield('extra_js')
+
 </body>
 </html>

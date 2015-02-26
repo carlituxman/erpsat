@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CrearCentros extends Migration {
+class CrearPiezasTabla extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,12 @@ class CrearCentros extends Migration {
 	 */
 	public function up()
 	{
-		//
-		Schema::create('centros', function(Blueprint $table)
+		Schema::create('piezas', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->timestamps();
-			$table->string("nombre",80);
+
+			$table->string("nombre",120);
 		});
 	}
 
@@ -28,8 +28,7 @@ class CrearCentros extends Migration {
 	 */
 	public function down()
 	{
-		//
-		Schema::drop('centros');
+		Schema::drop('piezas');
 	}
 
 }

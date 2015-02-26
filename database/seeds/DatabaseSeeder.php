@@ -3,6 +3,8 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
+use ERPsat\User;
+
 class DatabaseSeeder extends Seeder {
 
 	/**
@@ -14,7 +16,28 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		// $this->call('UserTableSeeder');
+		$this->call('UserTableSeeder');
+
+		$this->call('PaisesYEstadosSeeder');
+		$this->call('MunicipiosEsSeeder');
+
 	}
 
+}
+
+
+class UserTableSeeder extends Seeder {
+
+    public function run()
+    {
+		DB::table('users')->delete();
+
+		User::create([
+			'nombre'         => 'carlos',
+			'email'          => 'carlos@informatik.es',
+			'password'       => Hash::make('admin'),
+			'remember_token' => str_random(100),
+			'rol'            => 1,
+            ]);
+    }
 }

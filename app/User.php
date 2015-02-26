@@ -1,4 +1,5 @@
-<?php namespace ERPsat;
+<?php
+namespace ERPsat;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -22,7 +23,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'email', 'password', 'tipo'];
+	protected $fillable = ['nombre', 'email', 'password', 'rol'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.

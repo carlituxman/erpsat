@@ -24,14 +24,14 @@ class ConfigHelper {
 
         foreach ($menu as $m1) {
 
-            if( in_array($rol, $m1['rol']) or $m1['rol']==0 )
+            if( in_array($rol, $m1['rol']) or in_array(0, $m1['rol']) )
             {
                 $aux1 = [];
                 $aux2 = [];
 
-                foreach ($m1['opciones'] as $m2)
-                {
-                    if( in_array($rol, $m2['rol']) or $m2['rol']==0 )
+                foreach ($m1['opciones'] as $m2) {
+
+                    if( in_array($rol, $m2['rol']) or in_array(0, $m2['rol']) )
                     {
                         array_push($aux2, $m2);
                     }
@@ -67,7 +67,7 @@ class ConfigHelper {
     {
         $rol = 1;
 
-        return self::menuRol(Config::get(self::FILECONFIG.'menu.lateral'), $rol);
+        return self::menuRol(Config::get(self::FILECONFIG.'.menu.lateral'), $rol);
     }
 
 }
