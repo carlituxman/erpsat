@@ -2,6 +2,7 @@
 namespace ERPsat\Services;
 
 use ERPsat\User;
+use ERPsat\Models\Centro;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
@@ -30,11 +31,13 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
+		// Centro::create($data);
+
 		return User::create([
-			'nombre'   => $data['name'],
+			'nombre'   => $data['nombre'],
 			'email'    => $data['email'],
 			'password' => bcrypt($data['password']),
-			'rol'      => $data['rol'],
+			'rol'      => 1,
 		]);
 	}
 

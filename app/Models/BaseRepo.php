@@ -11,12 +11,29 @@ abstract class BaseRepo {
 
     abstract public function getModel();
 
+    /*public function all($columns = array('*'));
+
+    public function paginate($perPage = 15, $columns = array('*'));
+
+    public function create(array $data);
+
+    public function update(array $data, $id);
+
+    public function delete($id);
+
+    public function find($id, $columns = array('*'));
+
+    public function findBy($field, $value, $columns = array('*'));*/
+
+    public function all($columns = array('*'))
+    {
+        return $this->getModel()->all($columns);
+    }
 
     public function findOrFail($id)
     {
         return $this->getModel()->findOrFail($id);
     }
-
 
     public function search(array $data = array(), $paginate = false)
     {

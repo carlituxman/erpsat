@@ -139,6 +139,8 @@ return [
 
 		'Barryvdh\Debugbar\ServiceProvider',
 
+		'Chumper\Datatable\DatatableServiceProvider',
+
 		/*
 		 * Application Service Providers...
 		 */
@@ -198,7 +200,9 @@ return [
 		'Form'		=> 'Illuminate\Html\FormFacade',
 		'HTML'		=> 'Illuminate\Html\HtmlFacade',
 
-		'Debugbar' => 'Barryvdh\Debugbar\Facade',
+		'Debugbar'  => 'Barryvdh\Debugbar\Facade',
+
+		'Datatable' => 'Chumper\Datatable\Facades\DatatableFacade',
 
 	],
 

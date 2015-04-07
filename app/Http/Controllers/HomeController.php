@@ -1,5 +1,10 @@
-<?php
-namespace ERPsat\Http\Controllers;
+<?php namespace ERPsat\Http\Controllers;
+
+// use Illuminate\Http\Request;
+
+use ERPsat\Http\Requests\CentroRequest;
+
+use ERPsat\Models\CentroRepo;
 
 class HomeController extends Controller {
 
@@ -19,8 +24,10 @@ class HomeController extends Controller {
 	 *
 	 * @return void
 	 */
-	public function __construct()
+	public function __construct(CentroRepo $centro)
 	{
+		$this->centros = $centro;
+
 		$this->middleware('auth');
 
 		parent::__construct();
@@ -34,6 +41,11 @@ class HomeController extends Controller {
 	public function index()
 	{
 		return view('home');
+	}
+
+	public function centros(CentroRequest $request)
+	{
+		return $this->centros->all();
 	}
 
 }

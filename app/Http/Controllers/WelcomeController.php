@@ -1,6 +1,8 @@
 <?php
 namespace ERPsat\Http\Controllers;
 
+use ERPsat\User;
+use Datatable;
 
 class WelcomeController extends Controller {
 
@@ -36,5 +38,20 @@ class WelcomeController extends Controller {
 	{
 		return view('welcome');
 	}
+
+	public function datatables()
+	{
+		if(Datatable::shouldHandle())
+		{
+			return Datatable::collection(User::all(array('id','nombre')))
+				->showColumns('id', 'nombre')
+				->searchColumns('nombre')
+				->orderColumns('id','nombre')
+				->make();
+		}
+
+		return view('datatables');
+	}
+
 
 }

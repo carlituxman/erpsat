@@ -27,6 +27,7 @@ class Kernel extends HttpKernel {
 		'auth' => 'ERPsat\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
 		'guest' => 'ERPsat\Http\Middleware\RedirectIfAuthenticated',
+		'is_admin' => 'ERPsat\Http\Middleware\IsAdmin',
 	];
 
 }

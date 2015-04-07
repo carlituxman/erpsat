@@ -10,6 +10,7 @@
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
 
+    <script src="/assets/js/jquery-1.10.2.js"></script>
 
     {{--
     <link href="/css/app.css" rel="stylesheet">
@@ -91,7 +92,10 @@
                             <li><a href="/auth/register">Register</a></li>
                         @else
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    <i class="fa fa-user fa-fw"></i>{{ Auth::user()->nombre }} <span class="caret"></span>
+                                </a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="/auth/logout">Logout</a></li>
                                 </ul>
@@ -108,13 +112,18 @@
 
     @yield('menu-lateral')
 
+    <div class="pelota"></div>
+
     @yield('content')
 
     </div>
 
     <!-- Scripts -->
-    <script src="/assets/js/jquery-1.10.2.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
+
+    <script src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <link href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css" rel="stylesheet">
+
 
     <script src="/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="/assets/js/sb-admin.js"></script>

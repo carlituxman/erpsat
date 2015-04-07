@@ -11,6 +11,14 @@
 |
 */
 
+Route::get('/centros',
+    array(
+        'middleware' => ['is_admin'],
+        'uses' => 'HomeController@centros'
+    )
+);
+
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
@@ -21,6 +29,13 @@ Route::controllers([
 ]);
 
 Route::get('web', 'WelcomeController@web');
+
+Route::get('datatables',
+    array(
+      'as'     =>'test.datatables',
+      'uses'   =>'WelcomeController@datatables'
+    )
+  );
 
 /*
 |--------------------------------------------------------------------------
